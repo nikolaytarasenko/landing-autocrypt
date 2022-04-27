@@ -73,8 +73,8 @@ function clean(cb) {
 
 /* Watchers */
 function watchCode() {
-    watch(appPath.scss, buildStyles);
-    watch(appPath.pug, buildHtml);
+    watch('./app/scss/**/*.scss', buildStyles);
+    watch('./app/pug/**/*.pug', buildHtml);
     watch(appPath.img, copyImages)
     watch(appPath.fonts, copyFonts)
 }

@@ -1,0 +1,11 @@
+header.header
+    .container.header__container
+        .logo
+            a.logo__link(href='/') AutoCrypt
+        nav.nav
+            - var links = ['Benefit', 'Pricing', 'Testimonials', 'Client']
+                each link in links
+                    a.nav__link(href='#')=link
+        .authorization
+            a.authorization__link(href='#') Login
+            a.btn.btn_green.authorization__link(href='#') Register

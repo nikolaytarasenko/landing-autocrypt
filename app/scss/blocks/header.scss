@@ -1,0 +1,44 @@
+.header {
+  position: absolute;
+  top: 33px;
+  width: 100%;
+  z-index: 1;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+  }
+}
+
+.logo {
+  &__link {
+    font-size: 1.625rem;
+    font-weight: 500;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+}
+
+.authorization {
+  &__link {
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+
+  .btn {
+    padding: 10px 27px;
+    font-size: 1rem;
+    border-radius: 5px 0 5px 0;
+  }
+}

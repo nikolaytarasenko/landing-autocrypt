@@ -1,7 +1,74 @@
-html,
-body {
+
+
+/* Utils */
+@import 'utils/fonts';
+@import 'utils/vars';
+
+/* General */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: red;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+  transition: 0.15s ease-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: $content-size;
+  width: 100%;
+}
+
+.btn {
+  font-size: 1.125rem;
+  border-radius: 10px 0 10px 0;
+  font-weight: 700;
+  transition: 0.15s ease-out;
+
+  &_green {
+    background-color: $color-green;
+
+    &:hover {
+      opacity: 1;
+      background-color: darken($color-green, 10%);
+    }
+  }
+}
+
+/* Blocks */
+@import 'blocks/header';
+@import 'blocks/hero';
