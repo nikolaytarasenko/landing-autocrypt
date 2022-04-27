@@ -1,0 +1,30 @@
+{
+  "name": "landing-autocrypt",
+  "version": "1.0.0",
+  "description": "Autocrypt Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolaytarasenko/landing-autocrypt.git"
+  },
+  "author": "Nikolay Tarasenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolaytarasenko/landing-autocrypt/issues"
+  },
+  "homepage": "https://github.com/nikolaytarasenko/landing-autocrypt#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rimraf": "^1.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.51.0"
+  }
+}
