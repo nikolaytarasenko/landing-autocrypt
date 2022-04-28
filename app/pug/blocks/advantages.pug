@@ -1,0 +1,28 @@
+-
+    var advantages = [
+        {
+           src: './images/advantages-1.png',
+           title: 'Secure Every Transaction',
+           text: 'Your account is protected by Multifactor Authentication using a combination of email, SMS and Google Authenticator.'
+        },
+        {
+            src: './images/advantages-2.png',
+            title: 'Easiest To Use',
+            text: 'You only need 1 account to do all Bitcoin transactions whether it is buying, selling, investing or trading.'
+        },
+        {
+            src: './images/advantages-3.png',
+            title: 'Fastest Mining',
+            text: 'The Rupiah deposit can be processed instantly and Rupiah withdrawal is processed in less than 1 business day.'
+        }
+    ];
+
+section.section.advantages
+    .container
+        .advantages__list
+            each advantage in advantages
+                .advantages__item
+                    .advantages__icon-wrapper
+                        img.advantages__icon(src=advantage.src)
+                    h3.advantages__title=advantage.title
+                    p.advantages__text=advantage.text

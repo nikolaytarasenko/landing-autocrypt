@@ -1,4 +1,5 @@
-
+/* Libs */
+@import 'utils/libs';
 
 /* Utils */
 @import 'utils/fonts';
@@ -23,6 +24,7 @@ html {
 body {
   font-family: 'Rubik', sans-serif;
   overflow-x: hidden;
+  background-color: $color-silver;
 }
 
 img {
@@ -72,3 +74,4 @@ a {
 /* Blocks */
 @import 'blocks/header';
 @import 'blocks/hero';
+@import 'blocks/advantages';

@@ -1,0 +1,50 @@
+.advantages {
+  position: relative;
+
+  &__list {
+    position: relative;
+    top: -100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    padding: 66px 79px;
+    background-color: $color-white;
+    border-radius: 10px;
+    box-shadow: 0 10px 34px rgba(210, 210, 210, 0.5);
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(31, 219, 132, 0.1);
+    border-radius: 6px;
+    margin-bottom: 1.44rem;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $color-main-blue-dark;
+    margin-bottom: 3rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1.75rem;
+      width: 60px;
+      height: 4px;
+      background-color: $color-green;
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: $color-main-blue;
+  }
+}
