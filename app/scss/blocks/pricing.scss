@@ -1,0 +1,117 @@
+.pricing {
+  padding: 100px 0;
+
+  &__title {
+    max-width: 810px;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: $color-main-blue-dark;
+    text-align: center;
+  }
+
+  &__plan {
+    margin-top: 70px;
+  }
+}
+
+.pricing-plan {
+  text-align: center;
+
+  &__tabs {
+    display: inline-flex;
+    margin-bottom: 70px;
+  }
+
+  &__tab {
+    background-color: #F1FFF8;
+    color: $color-green;
+    font-weight: 700;
+    padding: 20px 37px;
+    border: 1px solid #AEFDD9;
+    transition: background-color 0.15s ease-out;
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+      border-left: 0;
+    }
+
+    &.active {
+      background-color: $color-white;
+    }
+
+    &:hover {
+      background-color: lighten($color-green, 43%);
+
+      &.active {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 65px;
+    transition: 0.15s ease-out;
+    border-top: 4px solid transparent;
+
+    &:nth-child(2) {
+      background-color: $color-white;
+      border-top: 4px solid #0A8AFF;
+      box-shadow: 0 7px 24px rgba(83, 83, 83, 0.1);
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $color-main-blue-dark;
+    margin-bottom: 35px;
+  }
+
+  &__price {
+    font-size: 5rem;
+    line-height: 4rem;
+    color: $color-green;
+    margin-bottom: 5px;
+  }
+
+  &__period {
+    display: inline-block;
+    color: $color-main-blue;
+    line-height: 2rem;
+    margin-bottom: 70px;
+  }
+
+  &__benefits {
+    color: $color-main-blue;
+    flex: 1;
+  }
+
+  &__benefit {
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__btn {
+    margin-top: 70px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    padding: 20px 45px;
+    border-radius: 5px 0 5px 0;
+    box-shadow: 0 8px 34px rgba(31, 219, 132, 0.6);
+  }
+}
